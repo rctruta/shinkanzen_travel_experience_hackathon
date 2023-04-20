@@ -1,0 +1,28 @@
+Hi Pauline,
+
+I was thinking that maybe we should devise a strategy wrt analyzing the missing data. 
+We should focus on those features that show a **strong** correlation with the `Overall_Experience`, and have
+a **large number** of missing values.
+
+1. I think we should focus on the correlated features that are purple, and maybe green, if time permits.
+
+2. Let's say features X and Y are correlated.
+Then,
+    df.groupby([X, Y])[X, Y].count().reset_index()
+Will give us an indication of how the values are distributed.
+
+3. Now, we need to identify the missing values.
+
+df[df[X].isna()].groupby(Y)[Y].count()
+
+Should give us the values for Y when X is null. 
+
+Use the distribution on step #2 to imput values for X.
+
+Of course, there's the case when both X and Y are null, and that should be treated further (or not).
+
+4. Repeat step #3 for the Y feature.
+
+
+
+
