@@ -25,4 +25,36 @@ Of course, there's the case when both X and Y are null, and that should be treat
 
 
 
+====================
+Added on April 21st.
+====================
+
+Hi Pauline,
+
+I looked at the impute documentation and I came across the following.
+
+My understanding is that it does what I've described above, and that makes me happy!
+
+https://scikit-learn.org/stable/modules/impute.html#multivariate-feature-imputation
+
+======================
+
+A more sophisticated approach is to use the IterativeImputer class, which models each 
+feature with missing values as a function of other features, and uses that estimate for 
+imputation. It does so in an iterated round-robin fashion: at each step, a feature column 
+is designated as output y and the other feature columns are treated as inputs X. 
+
+A regressor is fit on (X, y) for known y. 
+Then, the regressor is used to predict the missing values of y. 
+This is done for each feature in an iterative fashion, and then is repeated for max_iter 
+imputation rounds. The results of the final imputation round are returned.
+
+**Note**
+
+This estimator is still experimental for now: default parameters or details of behaviour 
+might change without any deprecation cycle. Resolving the following issues would help 
+stabilize IterativeImputer: convergence criteria (#14338), default estimators (#13286), 
+and use of random state (#15611). To use it, you need to explicitly 
+import enable_iterative_imputer. 
+
 
