@@ -14,11 +14,13 @@ The goal of the problem is to **predict whether a passenger was satisfied or not
 
 ### Results
 
-The final proposed solution is an ensemble Histogram-based Gradient Boosting algorithm [1] that works with data imputed with Iterative Imputer [2] by modeling each feature with missing values as a function of other features. Hyperopt was used to optimize parameters of the estimator, reaching an accuracy of 95.09%.
+The final proposed solution is an ensemble Histogram-based Gradient Boosting algorithm [1] that works with data imputed with Iterative Imputer [2] by modeling each feature with missing values as a function of other features. Hyperopt [3] was used to optimize parameters of the estimator, reaching an accuracy of 95.09%.
 
 [1] Scikit-learn developers. HistGradientBoostingClassifier: scikit-learn 0.24.2 documentation. Retrieved April 24, 2023, from https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html.
 
-[2] Scikit-learn developers. (n.d.). IterativeImputer: scikit-learn 0.24.2 documentation. Retrieved April 24, 2023, from https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html
+[2] Scikit-learn developers. IterativeImputer: scikit-learn 0.24.2 documentation. Retrieved April 24, 2023, from https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html
+
+[3] Bergstra, J., Yamins, D., & Cox, D. D. Hyperopt: A Python library for optimizing the hyperparameters of machine learning algorithms. Retrieved April 24, 2023, from http://hyperopt.github.io/hyperopt/
 
 # Data 
 
