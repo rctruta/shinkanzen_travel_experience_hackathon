@@ -1,5 +1,14 @@
 # Shinkanzen Travel Experience Hackathon
 
+
+It was an honor to work alongside Pauline Novak on the Shinkanzen Travel Experience hackathon project, hosted by [MIT Professional Education](https://professional.mit.edu/)! This hackathon experience concluded our journey through the [Applied Data Science Program](https://professional.mit.edu/course-catalog/applied-data-science-program).
+
+Our team, Nebulae, used survey and personal data to predict the overall travel experience. We implemented an iterative imputer for missing data and used a histogram-based gradient boosting classifier fine-tuned with RandomizedCV.
+
+While our project eventually dropped in the rankings, I am grateful for the opportunity to collaborate with such a talented and driven teammate like Pauline!
+
+It was an exhilarating experience to witness the accuracy meter increase from 0.9497219 to 0.9509578! 
+
 ### Problem Definition
 
 This problem statement is based on the Shinkansen Bullet Train in Japan, and passengers’ experience with that mode of travel. This machine learning exercise aims to determine the relative importance of each parameter with regards to their contribution to the passengers’ overall travel experience. The dataset contains a random sample of individuals who traveled on this train. The on-time performance of the trains along with passenger information is published in a file named ‘Traveldata_train.csv’.  These passengers were later asked to provide their feedback on various parameters related to the travel along with their overall experience. These collected details are made available in the survey report labeled ‘Surveydata_train.csv’.
