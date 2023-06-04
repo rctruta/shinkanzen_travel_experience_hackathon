@@ -1,13 +1,13 @@
 # Shinkanzen Travel Experience Hackathon
 
 
-It was an honor to work alongside Pauline Novak on the Shinkanzen Travel Experience hackathon project, hosted by [MIT Professional Education](https://professional.mit.edu/)! This hackathon experience concluded our journey through the [Applied Data Science Program](https://professional.mit.edu/course-catalog/applied-data-science-program).
+It was an honor to work alongside Pauline Novak on the `Shinkanzen Travel Experience` hackathon project, hosted by [MIT Professional Education](https://professional.mit.edu/)! This hackathon experience concluded our journey through the [Applied Data Science Program](https://professional.mit.edu/course-catalog/applied-data-science-program).
 
-Our team, Nebulae, used survey and personal data to predict the overall travel experience. We implemented an iterative imputer for missing data and used a histogram-based gradient boosting classifier fine-tuned with RandomizedCV.
+Our team, `Nebulae`, used survey and personal data to predict the overall travel experience. We implemented an iterative imputer for missing data and used a histogram-based gradient boosting classifier fine-tuned with `RandomizedCV`.
 
 While our project eventually dropped in the rankings, I am grateful for the opportunity to collaborate with such a talented and driven teammate like Pauline!
 
-It was an exhilarating experience to witness the accuracy meter increase from 0.9497219 to 0.9509578! 
+It was an exhilarating experience to witness the accuracy meter increase from `0.9497219` to `0.9509578`! 
 
 ### Problem Definition
 
